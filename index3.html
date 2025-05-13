@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice <table></table></title>
+    <style>
+        table{
+            width: 70%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table, tr , th, td {
+            border:1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        tr{
+            height: 35px;
+        }
+        tr:nth-child(even){
+            background-color: rgb(192, 220, 245);
+
+        }
+        .color{
+            background-color: rgb(192, 220, 245);
+        }
+        
+        tfoot{
+             background-color: rgb(192, 220, 245);
+             
+        }
+        .Name{
+            background-color: rgb(205, 133, 133);
+
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr class="color">
+                <th rowspan="2"> Name</th>                
+                <th rowspan="2"> ID</th>                         
+                <th colspan="2"> Mebership Dates</th>               
+                <th rowspan="2"> Balance</th>               
+            </tr>
+            <tr>
+               <th style="background-color: lightgreen;">Join</th>
+                        <th style="background-color: lightpink;">Canceled</th>
+            </tr>
+            
+            <tbody>
+                <tr>
+                <td class="Name">Margaret Nguyen</td>
+                <td>427311</td>
+                <td>June 3, 2010</td>
+                <td>n/a</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td class="Name">Edvard Galinski</td>
+                <td>533175</td>
+                <td>January 13, 2011</td>
+                <td>April 8,2018</td>
+                <td>37.50</td>
+            </tr>
+            <tr>
+                <td class="Name">Hoshi Nakamura</td>
+                <td>601942</td>
+                <td>July23, 2012</td>
+                <td>n/a</td>
+                <td>15.00</td>
+               
+            </tr>
+            <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: right;">Total Balance</td>
+                
+                <td>52.00</td>
+                
+               
+            </tr>
+            </tfoot>
+           
+            </tbody>
+            
+        </thead>
+    </table>
+</body>
+</html>
